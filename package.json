@@ -26,6 +26,7 @@
     "@babel/plugin-proposal-decorators": "^7.4.4",
     "@babel/preset-env": "^7.9.5",
     "babel-loader": "^8.0.6",
+    "mobx": "^5.15.4",
     "webpack": "^4.35.2",
     "webpack-cli": "^3.3.5"
   }

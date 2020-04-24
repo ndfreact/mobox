@@ -2,7 +2,7 @@ const path = require("path")
 
 const config =  {
     mode: 'development',
-    entry: path.resolve(__dirname, 'src/index5.js'),
+    entry: path.resolve(__dirname, 'src/index6.js'),
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'main.js'
@@ -13,6 +13,21 @@ const config =  {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: "babel-loader"
+            },
+            {
+                test: /.css$/,
+                use: [
+                    'style-loader',
+                    'css-loader'
+                ]
+            },
+            {
+                test: /.less$/,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'less-loader'
+                ]
             }
         ]
     },

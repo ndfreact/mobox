@@ -2,7 +2,7 @@ const path = require("path")
 
 const config =  {
     mode: 'development',
-    entry: path.resolve(__dirname, 'src/index6.js'),
+    entry: path.resolve(__dirname, 'src/index7.js'),
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'main.js'

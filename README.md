@@ -12,3 +12,9 @@ cd ..
 npm init -y
 cnpm i webpack webpack-cli babel-core babel-preset-env babel-loader -D
 ```
+
+
+1. @action 和@action.bound的区别
+   * 绑定：如何在结果函数中绑定它,原型：如果生成的函数在原型中
+   * @action保留原始函数的绑定和原型包含.如果原始函数未绑定,则结果不会,反之亦然.如果原始函数不在原型中,结果将不会,反之亦然.
+   * @ action.bound将始终生成一个绑定的函数,该函数位于原型中
